@@ -1,15 +1,3 @@
-const decreaseButton = document.getElementById('decreaseCelsius');
-const increaseButton = document.getElementById('increaseCelsius');
-const celsiusValue = document.getElementById('celsiusValue');
-const kelvinValue = document.getElementById('kelvinValue');
-
-let currentCelsius = 0;
-
-decreaseButton.addEventListener('click', function() {
-  currentCelsius -= 1;
-  updateValues();
-});
-
 setInterval(function () {
     const newBubble = document.createElement('div');
     newBubble.classList.add('bubbles');
@@ -48,6 +36,18 @@ setInterval(function () {
       }, 2000);
     }, Math.floor(Math.random() * 1000) + 2000);
   }, 900);
+
+const decreaseButton = document.getElementById('decreaseCelsius');
+const increaseButton = document.getElementById('increaseCelsius');
+const celsiusValue = document.getElementById('celsiusValue');
+const kelvinValue = document.getElementById('kelvinValue');
+
+let currentCelsius = 0;
+
+decreaseButton.addEventListener('click', function() {
+  currentCelsius -= 1;
+  updateValues();
+});
 
 function updateValues() {
   celsiusValue.textContent = currentCelsius;
