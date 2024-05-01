@@ -15,6 +15,25 @@ main {
   justify-content: center;
 }
 
+.bubbles {
+    transition: transform 2.0s ease, opacity 1.16s ease, left .16s ease, top .16s ease, right .16s ease, bottom .16s ease;
+    position: fixed;
+    z-index: -1; 
+    background-color: #BC987E; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    transform: scale(1);
+    opacity: 0;
+    filter: blur(30px);
+    backdrop-filter: blur(200px); 
+}
+
+.bubble-hide {
+    transform: scale(0);
+    opacity: 0 !important;
+} 
+
 #converter {
   display: flex;
   flex-direction: column;
