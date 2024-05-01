@@ -10,12 +10,6 @@ decreaseButton.addEventListener('click', function() {
   updateValues();
 });
 
-increaseButton.addEventListener('click', function() {
-  currentCelsius += 1;
-  updateValues();
-});
-
-
 setInterval(function () {
     const newBubble = document.createElement('div');
     newBubble.classList.add('bubbles');
@@ -59,3 +53,8 @@ function updateValues() {
   celsiusValue.textContent = currentCelsius;
   kelvinValue.textContent = (currentCelsius + 273.15).toFixed(2);
 }
+
+increaseButton.addEventListener('click', function() {
+  currentCelsius += 1;
+  updateValues();
+});
