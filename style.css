@@ -8,6 +8,7 @@ body {
 
 main {
   min-height: 100vh;
+  touch-action: manipulation;
   padding: 2rem;
   display: flex;
   flex-direction: column;
