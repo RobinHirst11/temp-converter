@@ -4,7 +4,7 @@ setInterval(function () {
     document.body.appendChild(newBubble);
     newBubble.style.top = Math.floor(Math.random() * window.innerHeight + 1) + 'px';
     newBubble.style.left = Math.floor(Math.random() * window.innerWidth + 1) + 'px';
-    // newBubble.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    newBubble.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
     const myDirection = Math.floor(Math.random() * 5);
     setTimeout(function () {
       newBubble.style.opacity = '0.5';
