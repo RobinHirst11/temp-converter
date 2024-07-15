@@ -1,4 +1,5 @@
 body {
+  touch-action: none;
   background-color: #111;
   color: #fff;
   margin: 0;
@@ -17,6 +18,7 @@ main {
 }
 
 .bubbles {
+    touch-action: none;
     transition: transform 2.0s ease, opacity 1.16s ease, left .16s ease, top .16s ease, right .16s ease, bottom .16s ease;
     position: fixed;
     z-index: -1; 
@@ -31,11 +33,13 @@ main {
 }
 
 .bubble-hide {
+    touch-action: none;
     transform: scale(0);
     opacity: 0 !important;
 } 
 
 #converter {
+  touch-action: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,6 +47,7 @@ main {
 }
 
 .value-box {
+  touch-action: none;
   margin: 1rem;
   padding: 2rem;
   border: 1px solid #BC987E;
@@ -52,16 +57,19 @@ main {
 }
 
 .value-box h2 {
+  touch-action: none;
   margin-bottom: 0.5rem;
   font-size: 2rem;
 }
 
 span {
+  touch-action: none;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .buttons {
+  touch-action: none;
   margin: 1rem;
   display: flex;
   justify-content: space-between;
@@ -69,6 +77,7 @@ span {
 }
 
 button {
+  touch-action: none;
   width: 50px;
   height: 40px;
   border: none;
